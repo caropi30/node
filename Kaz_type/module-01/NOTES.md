@@ -89,3 +89,9 @@ En la linea de comandos escriba lo siguiente:
 ```powershell
 $ node ./build/module01.js
 ```
+
+El resultado sera mostrado en consola.
+
+#### Adición de un archivo HTML
+
+El Ultimo paso consiste en agregar un archivo HTML al proyecto para ejecutar y probar el código.
