@@ -65,7 +65,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // });
 });
 
-
 // Ejemplo de uso de tipo 'unknown'
 let unk: unknown = "asd";
 unk = 10;
