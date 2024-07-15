@@ -4,12 +4,79 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test Javascript</title>
+    <style>
+      form > div {
+        border: 1px solid black;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 8px;
+
+        button {
+          align-self: flex-start;
+          margin: 8px;
+        }
+      }
+      label {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        font-weight: bold;
+        margin-bottom: 4px;
+        input {
+          padding: 4px 8px;
+        }
+      }
+      .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 400px;
+        /* border: 1px solid black; */
+      }
+      .showSum {
+        width: 100%;
+        text-align: center;
+        font-size: 4em;
+      }
+    </style>
   </head>
   <body>
     <h1>Test Javascript</h1>
-    <p id="date"></p>
     <p>Esta pagina llama al script <i>module01.js</i>.</p>
+    <p id="date"></p>
+
+    <div class="content">
+      <form class="myForm" id="myForm">
+        <div>
+          <label for="number_1">
+            Nummero 1º:
+            <input
+              type="number"
+              id="number_1"
+              placeholder="Ingrese un numero"
+              value="0"
+            />
+          </label>
+          <label for="number_2">
+            Numero 2º:
+            <input
+              type="number"
+              id="number_2"
+              placeholder="Ingrese un numero"
+              value="0"
+            />
+          </label>
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+      <div id="showSum" class="showSum">0</div>
+    </div>
     <script src="./build/module01.js"></script>
-    <noscript>Usted necesita activar javascript para ver el sitio completo</noscript>
+    <noscript
+      >Usted necesita activar javascript para ver el sitio completo</noscript
+    >
   </body>
 </html>
