@@ -86,6 +86,9 @@ console.log(empName12);
 // 'boolean'
 let isPresent = true;
 console.log(isPresent);
+// 'void'
+/* void implica que no hay datos. Esto se usa típicamente para definir funciones */
+console.log("Type 'void'");
 // 'undefined'
 let x = undefined; // valor es 'undefined'
 console.log(x);
@@ -102,3 +105,17 @@ console.log(typeof (x2));
 x2 = "hello";
 console.log(x2);
 console.log(x2);
+let x22; // 'null' como tipo de dato 
+// x22 = "hello"; // Error:
+// never
+// let str1: never = 'null'; // Error
+// 'any'
+console.log("Type 'any'");
+let value;
+console.log(typeof (value));
+value = "Hello";
+console.log(value);
+console.log(typeof (value));
+value = 100;
+console.log(value);
+console.log(typeof (value));
