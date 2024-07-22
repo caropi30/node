@@ -20,7 +20,7 @@ TypeScript ofrece todas las características de JavaScript, además de una capa 
 
 ## Using the Lab start and end solution files
 
-You can use the TypeScript [Playground](https://www.typescriptlang.org/play), Visual Studio Code, or any TypeScript-compatible IDE to complete the labs in the "Developing JavaScript applications using TypeScript" [LINK TO the Developing JavaScript applications using TypeScript] learning path.
+You can use the TypeScript [Playground](https://www.typescriptlang.org/play), Visual Studio Code, or any TypeScript-compatible IDE to complete the labs in the "Developing JavaScript applications using TypeScript" [LINK TO the Developing JavaScript applications using TypeScript](https://learn.microsoft.com/es-es/training/paths/build-javascript-applications-typescript) learning path.
 
 The **start** and **end** solutions for each lab are located in the **code** folder. In each lab, you will be provided with a link to each folder, as appropriate, for easy access.
 
@@ -34,7 +34,7 @@ Install the following software on your machine:
 2. Node Package Manager (npm)
 3. TypeScript Compiler (tsc)
 
-For best results, follow the complete instructions for setting up your environment and using the TypeScript compiler in [LINK TO Module 01: Get started with TypeScript ]. After setting up your environment, you can run any of the Lab solution files in the "Developing JavaScript applications using TypeScript" [LINK TO the Developing JavaScript applications using TypeScript] learning path.
+For best results, follow the complete instructions for setting up your environment and using the TypeScript compiler in [LINK TO Module 01: Get started with TypeScript ](https://learn.microsoft.com/es-es/training/modules/typescript-get-started/). After setting up your environment, you can run any of the Lab solution files in the "Developing JavaScript applications using TypeScript" [LINK TO the Developing JavaScript applications using TypeScript](https://learn.microsoft.com/es-es/training/paths/build-javascript-applications-typescript/) learning path.
 
 ### Playground
 
