@@ -10,7 +10,7 @@ trim_trainling_whitespace = true
 [*.html]
 indent_size = 4
 
-[*.ts]
+[*{.ts, .js}]
 quote_type = single
 indent_size = 2
 
