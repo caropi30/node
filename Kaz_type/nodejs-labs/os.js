@@ -92,17 +92,17 @@ function tiempoActivo() {
 // Salida
 const mostrarInformacion = `
 ================================================================================
-|   ${informacion}
-|
-|                            ${hostname}${at}${userInfo.username}
-|  ,-~~-.___.             ------------------------------------
-| / |  '     \\             OS: ${setOs}
-|(  )         0            Kernel: ${setKernel}
-| \\_/-, ,----'             Uptime: ${setUptime}
-|    ====           //     CPU: ${setCPU}
-|   /  \\-'~;    /~~~(O)    Memory: ${setMemory}
-|  /  __/~|   /       |      
-|=(  _____| (_________|      ${colors}
+|    ${informacion}
+| 
+|                             ${hostname}${at}${userInfo.username}
+|   ,-~~-.___.             ------------------------------------
+|  / |  '     \\             OS: ${setOs}
+| (  )         0            Kernel: ${setKernel}
+|  \\_/-, ,----'             Uptime: ${setUptime}
+|     ====           //     CPU: ${setCPU}
+|    /  \\-'~;    /~~~(O)    Memory: ${setMemory}
+|   /  __/~|   /       |      
+| =(  _____| (_________|      ${colors}
 ================================================================================
 `;
 
