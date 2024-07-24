@@ -28,7 +28,7 @@ const constants = os.constants;
 
 const tiempo = tiempoActivo(uptime);
 
-// Colors
+// Colors: Cuadrados
 const negro = styleText("black", "\u25A0");
 const rojo = styleText("red", "\u25A0");
 const verde = styleText("green", "\u25A0");
@@ -37,8 +37,10 @@ const azul = styleText("blue", "\u25A0");
 const mangenta = styleText("magenta", "\u25A0");
 const cyan = styleText("cyan", "\u25A0");
 const white = styleText("white", "\u25A0");
+
+// Colors: Texto
 const informacion = styleText(
-  ["greenBright", "bgGreenBright", "bold"],
+  ["black", "bgGreenBright", "bold"],
   " INFORMACIÓN "
 );
 const setOs = styleText("greenBright", `${version} ${machine} ${platform}`);
@@ -56,21 +58,6 @@ const at = styleText("greenBright", "@");
 // const lineaHorizontal =
 
 const colors = `${negro} ${rojo} ${verde} ${amarillo} ${azul} ${mangenta} ${cyan} ${white}`;
-const mostrarInformacion = `
-================================================================================
-|   ${informacion}
-|
-|                            ${hostname}${at}${userInfo.username}
-|  ,-~~-.___.             ------------------------------------
-| / |  '     \\             OS: ${setOs}
-|(  )         0            Kernel: ${setKernel}
-| \\_/-, ,----'             Uptime: ${setUptime}
-|    ====           //     CPU: ${setCPU}
-|   /  \\-'~;    /~~~(O)    Memory: ${setMemory}
-|  /  __/~|   /       |      
-|=(  _____| (_________|      ${colors}
-================================================================================
-`;
 
 // functions
 
@@ -101,5 +88,22 @@ function tiempoActivo() {
   const bytesRestantes = totalmem % (1024 * 1024);
   return { gigabytes, megabytes, bytesRestantes };
 } */
+
+// Salida
+const mostrarInformacion = `
+================================================================================
+|   ${informacion}
+|
+|                            ${hostname}${at}${userInfo.username}
+|  ,-~~-.___.             ------------------------------------
+| / |  '     \\             OS: ${setOs}
+|(  )         0            Kernel: ${setKernel}
+| \\_/-, ,----'             Uptime: ${setUptime}
+|    ====           //     CPU: ${setCPU}
+|   /  \\-'~;    /~~~(O)    Memory: ${setMemory}
+|  /  __/~|   /       |      
+|=(  _____| (_________|      ${colors}
+================================================================================
+`;
 
 console.log(mostrarInformacion);
