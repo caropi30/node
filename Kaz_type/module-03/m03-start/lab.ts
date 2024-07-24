@@ -71,3 +71,55 @@ ball = tube;
 // Sin embargo, una variable de tipo `Ball` no puede ser asignada a una variable de tipo `Tube`
 // por que `Ball` no tiene `length`.
 // Fin Ejemplo -2
+
+/* Extension de una interfaz en TypeScript */
+
+interface IceCream {
+  flavor: string;
+  scoops: number;
+  instructions?: string;
+}
+
+// let myIceCream: Sundae = {
+//   flavor: 'vanilla',
+//   scoops: 2,
+//   sauce: 'caramel',
+//   nuts: true,
+// };
+
+// console.log(myIceCream.flavor);
+
+/* function tooManyScoops(desert: IceCream) {
+  if (desert.scoops >= 4) {
+    return desert.scoops + ' is too many scoops!';
+  } else {
+    return 'Your order will be ready soon!';
+  }
+} */
+
+// console.log(tooManyScoops({ flavor: 'vanilla', scoops: 5 }));
+
+interface Sundae extends IceCream {
+  sauce: 'chocolate' | 'caramel' | 'strawberry';
+  nuts?: boolean;
+  whippedCream?: boolean;
+  instructions?: string;
+}
+
+function tooManyScoops(desert: Sundae) {
+  if (desert.scoops >= 4) {
+    return desert.scoops + ' is too many scoops!';
+  } else {
+    return 'Your order will be ready soon!';
+  }
+}
+console.log(tooManyScoops({ flavor: 'vanilla', scoops: 5, sauce: 'caramel' }));
+
+interface IceCreamArray {
+  [index: number]: string;
+}
+
+let myIceCream: IceCreamArray;
+myIceCream = ['chocolate', 'vanilla', 'strawberry'];
+let myStr: string = myIceCream[0];
+console.log(myStr);
