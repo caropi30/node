@@ -5,15 +5,16 @@
     TODO: Declare the Loan interface. */
 interface Loan {
   principal: number;
-  interestRate: number; // Interest rate percentage (eg. 15 is 15%)
+  interestRate: number;
 }
 
 /*  TODO: Declare the ConventionalLoan interface. */
 interface ConventionalLoan extends Loan {
-  months: number; // Total number of months
+  months: number;
 }
 
 /*  TODO: Update the calculateInterestOnlyLoanPayment function. */
+
 function calculateInterestOnlyLoanPayment(loanTerms: Loan): string {
   // Calculates the monthly payment of an interest only loan
   let interest: number = loanTerms.interestRate / 1200; // Calculates the Monthly Interest Rate of the loan
