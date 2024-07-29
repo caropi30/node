@@ -1,0 +1,15 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ESNext",
+    "outDir": "./build_TS_files",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true, // Deshabilita las comprobaciones de tipos en las declaraciones de biblioteca, lo que puede acelerar la compilación.
+  },
+  "include": [
+    "./**/*.ts",
+    "./*.mts"
+  ]
+}
